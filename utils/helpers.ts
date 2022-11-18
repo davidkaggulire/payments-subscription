@@ -6,7 +6,8 @@ export const getURL = () => {
       ? process.env.URL
       : process?.env?.VERCEL_URL && process.env.VERCEL_URL !== ''
       ? process.env.VERCEL_URL
-      : 'http://localhost:3000';
+      // : 'http://localhost:3000';
+      : 'https://payments-subscription.vercel.app';
   return url.includes('http') ? url : `https://${url}`;
 };
 
